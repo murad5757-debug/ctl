@@ -1,0 +1,285 @@
+/*--Body Reset --*/
+
+body{
+    overflow-x: hidden;
+    font-family: 'Montserrat',sans-serif,'poppins';
+    color: #616971;
+}
+
+/*=====================TOP BAR HEADER=====================*/
+/*for only the background*/
+.top-bar{
+    background-color: #323333;
+    height: 2rem;
+    padding: .2rem 0;
+}
+/*inside the background*/
+.top-bar a{
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/*=====================NAVIGATION=====================*/
+/* inside navbar image height*/
+.navbar-brand img {
+    height: 3rem;
+}
+/*nav bar letters */
+.navbar {
+    font-size: 1.15rem;
+    font-weight: 700;
+    box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .1);
+    z-index: 1;
+}
+/*nav example home spacing middle*/
+.nav-item{
+    padding: 0.4rem;
+}
+
+.nav-link{
+    color: black !important;
+    border: 2px solid transparent;
+    
+}
+
+.nav-link:hover{
+    border-bottom: 2px solid #A71D36 ;
+    color: black;
+    transition: 2s;
+}
+.nav-link.active,
+.nav-link:hover{
+    color: #A71D36 !important;
+    transition: 1s ease;
+   }
+
+/*=====================CAROUSEL=====================*/
+
+#carousel{
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, .1);
+}
+
+.carousel-inner{
+    max-height: 38rem;
+}
+/*===CHANGING CAROUSAL TRANSITION SPEED===*/
+/* to change the speed of the next and prev button*/
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active{
+    transition: transform 1.2s ease;
+}
+
+
+
+/*==CAROUSAL CONTENT==*/
+/*to take the 1st image carousel top content to center*/
+
+.carousel-caption{
+
+    position: absolute;
+    top: 44%;
+    transform: translateY(-50%);
+
+    
+
+}
+.carousel-caption h1{
+    font-size: 3.8rem;
+    text-shadow: .1rem .1rem .3rem rgba(0, 0, 0, .5);
+}
+.carousel-caption h3{
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 0.1rem;
+    text-shadow: .1rem .1rem .3rem rgba(0, 0, 0, 1) ;
+
+}
+.carousel-caption h3 span{
+    font-size: 25px;
+
+}
+.bg-custom{
+    background-color: rgba(0, 0, 0, .60);
+    color: white;
+    border-radius: 1rem;
+
+}
+
+
+p.lead{
+    font-family: 'poppins' sans-serif;
+    font-weight: 500;
+}
+
+/*=====================3 logos=====================*/
+
+h4{
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-weight: 500;
+}
+
+.display-5{
+    font-family: 'poppins';
+    font-size: 35px;
+    font-weight: 500;
+}
+
+p.muted{
+    font-family: 'poppins';
+    color: black;
+    font-size: 17px;
+    line-height:2rem !important;
+}
+
+
+
+/*=====================FIXED BACKGROUND IMG=====================*/
+.fixed{
+    background-image: url("../css/matrix.png");
+    position: fixed;
+    background-size: cover;
+    width: 100%;
+}
+
+.fixed-background{
+    padding: 5rem 0 ;
+}
+h5.gotha{
+    color: #414042;
+}
+p.shutup{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #414042;
+    font-size: 13px;
+}
+.my-1 a h4{
+    color: #414042;
+    text-decoration: none;
+}
+.my-1 a{
+    text-decoration: none!important;
+}
+.my-1 a h4:hover{
+    color: #A71D36 !important;
+    transition: 1s ease;
+    text-decoration: none;
+}
+/*==EMOJI NAV BAR==*/
+
+
+
+/*=====================FOOTER=====================*/
+
+footer{
+    background-color: #383838;
+    padding: 1rem 2rem 3rem;
+}
+
+footer img{
+    margin: 1.5rem auto;
+}
+
+/*to change the color of social icons*/
+footer p, footer a, 
+.socket a{
+    text-decoration: none;
+    color: #fff;
+}
+/*to make social icons inline  ----*/
+
+ul.social{
+    list-style: none;
+    display: flex;
+    max-width: 20rem;
+    margin: 0 auto;
+    padding: 0;
+}
+ul.social li{
+   margin:0 auto; 
+}
+
+/*to make social icons font big*/
+footer .fa {
+    font-size: 2rem;
+    text-align: center;
+}
+footer .fa:hover{
+color: #68a0d2;
+
+}
+
+/*=====================SOCKET=====================*/
+.socket {
+    background-color: #222222;
+    border-top: .1rem solid #4981b3 ;
+}
+
+
+/*=====================MEDIA QUERIES=====================*/
+
+/*Device under 1199px (xl)*/
+@media (max-width: 1199.98px){
+
+}
+/*Device under 992 (lg)*/
+@media (max-width: 991.98px){
+
+}
+
+
+/*======================= BOOTSRAP BREAKPOINTS:
+
+Extra small (xs) devicess (Portrait phone, 576px and up)
+No media queries since this is the default bootstrap
+
+small (sm) devices (landscape phones, 576px and up)
+@media (min-width:576px)  { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width:768px)  { ... }
+
+large (lg) devices (desktops, 992px and up)
+@media (min-width:992px)  { ... }
+
+Extra Large (xl) devices (Large desktops,1200px and up)
+@media (min-width:1200px) { ... }
+
+==============================*/
+
+/* Bootsrap Mobile Gutter Fix --*/
+.row, .container-fluid {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+/* Fixed Background Image --*/
+.fixed-background{
+    position: relative;
+    width: 100%;
+    z-index: 1000 !important;
+}
+.fixed-wrap{
+    clip:rect(0,auto, auto,0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -999 !important;
+}
+.fixed{
+    z-index: -999 !important;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    will-change: transform;
+}
+
